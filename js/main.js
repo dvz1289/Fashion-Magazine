@@ -51,8 +51,8 @@ $(function(){
     if(win_w>1180){
       $(this).addClass('on');
     }else{
-      $('#gnb>li>a').off('click');
-      $('#gnb>li>a').on('click', function(){
+      $('#gnb>li>span').off('click');
+      $('#gnb>li>span').on('click', function(){
         $('.sub_wrap').stop().slideUp();
         $(this).next('.sub_wrap').stop().slideToggle();
       });
@@ -68,12 +68,6 @@ $(function(){
   $('#gnb_clone>li').on('mouseenter', function(){
     if(win_w>1180){
       $(this).addClass('on');
-    }else{
-      $('#gnb_clone>li>a').off('click');
-      $('#gnb_clone>li>a').on('click', function(){
-        $('.sub_wrap').stop().slideUp();
-        $(this).next('.sub_wrap').stop().slideToggle();
-      });
     }
   });
   $('#gnb_clone>li').on('mouseleave', function(){
