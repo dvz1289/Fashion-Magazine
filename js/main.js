@@ -51,8 +51,8 @@ $(function(){
     if(win_w>1180){
       $(this).addClass('on');
     }else{
-      $('#gnb>li>span').off('click');
-      $('#gnb>li>span').on('click', function(){
+      $('#gnb>li>a').off('click');
+      $('#gnb>li>a').on('click', function(){
         $('.sub_wrap').stop().slideUp();
         $(this).next('.sub_wrap').stop().slideToggle();
       });
