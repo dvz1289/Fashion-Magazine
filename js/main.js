@@ -1,7 +1,7 @@
 $(function(){
   var win_w = $(window).width();
   var video = $('#video').get(0);
-  var swiper = new Swiper('#visual .swiper-container', {
+  var swiper = new Swiper('#visual .swiper', {
     autoplay: {
       delay: 5000,
     },
@@ -14,7 +14,7 @@ $(function(){
     },
   });
 
-  var swiper = new Swiper('#testimonial .swiper-container', {
+  var swiper = new Swiper('#testimonial .swiper', {
     autoplay: {
       delay: 7000,
     },
